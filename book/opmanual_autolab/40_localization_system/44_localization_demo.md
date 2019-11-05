@@ -102,7 +102,7 @@ and stop it at the end of the experiment.
 
 First, you need to know where your bag is. The folder containing it is referred as `PATH_TO_BAG_FOLDER` in the following. We recommend you create new separate folders for each experiment (with date and/or sequence number).
 
-    laptop $ docker run --name post_processor -dit --rm -e INPUT_BAG_PATH=/data/![BAG_NAME.BAG] -e OUTPUT_BAG_PATH=/data/processed_![BAG_NAME.BAG] -e ROS_MASTER_URI=http://![YOUR_IP]:11311 -v ![PATH_TO_BAG_FOLDER]:/data duckietown/post-processor:daffy-amd64
+    laptop $ docker run --name post_processor -it --rm -e INPUT_BAG_PATH=/data/![BAG_NAME.BAG] -e OUTPUT_BAG_PATH=/data/processed_![BAG_NAME.BAG] -e ROS_MASTER_URI=http://![YOUR_IP]:11311 -v ![PATH_TO_BAG_FOLDER]:/data duckietown/post-processor:daffy-amd64
 
 When the container stops, then you should have a new bag called `processed_BAG_NAME.BAG` inside of your `PATH_TO_BAG_FOLDER`.
 
