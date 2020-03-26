@@ -171,7 +171,7 @@ The `PATH_TO_RESULT_FOLDER` folder is the one where the results will be saved in
 After the localization is done (either offline or online), you can visualize the trajectory
 of each Autobot superimposed to your map using a jupyter notebook in the duckietown-world repository.
 Similarly to [](#autolab-map-making), launch `jupiter notebook` and open your browser.
-Navigate to `notebooks` and open the notebook `65-Localization-ShowTrajectory`.
+Navigate to `notebooks/not-run-as-unit-tests` and open the notebook `65-Localization-ShowTrajectory`.
 Change the values in the first block of this notebook to reflect the name of your map,
 the location of your trajectory files within the file system, and the name of the Autobot to show.
 
