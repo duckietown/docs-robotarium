@@ -4,7 +4,8 @@
 
 <div class='requirements' markdown="1">
 
-Requires: A fully operational Watchtower 
+Requires: A fully operational Watchtower
+
 Results: Accurate measure of the light field of the Autolab
 
 </div>
@@ -17,10 +18,11 @@ Note: **I/O error** : If you get an Input/Output error probably one of your pins
 ## Software setup {#light-sensors-software}
 
 <div class='requirements' markdown="1">
-Requires: A sensor which is correctly setup on a running watchtower.
-Ideally an external light sensor that measures luminescence that can be used as reference.
+
+Requires: A sensor which is correctly setup on a running watchtower. Ideally an external light sensor that measures luminescence that can be used as reference.
 
 Result: An environment where you can control the light intensity, it can also be very small (try to use two light intensities below and above the operating point).
+
 </div>
 
 ### Calibration
