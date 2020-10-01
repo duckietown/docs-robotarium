@@ -422,8 +422,7 @@ Congratulations, you finished this instruction page!
 
 
 ## Extension to a traffic light {#howto-traffic-light-WT19B}
-Those steps are not meant to be done in a series, so pay attention to the signs on where to return to the standard instructions of the watchtower.
-Note: Make sure to build the assemblies as many times as they are indicated in the black box (either once or twice).
+Those steps are not meant to be done in a series, so pay attention to the signs on where to return to the standard instructions of the watchtower. Make sure to build the assemblies as many times as they are indicated in the black box (either once or twice).
 
 
 ### Step 31
