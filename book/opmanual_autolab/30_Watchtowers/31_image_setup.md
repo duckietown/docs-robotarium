@@ -20,22 +20,27 @@ Next Steps: [Place the Watchtower in the city](#localization-watchtower-placemen
 
 The image setup procedure for Watchtowers is the same as for Duckiebots.
 
-In the Autolab of ETH Zurich, we use the naming convention:
+Warning: If you are a host for AIDO compeition and you are setting up watchtower, you must follow the following instructions.
 
-* linux-username:  **mom**
-* hostname **watchtowerXX** (where XX specify the number of the Watchtower)
-* password **MomWatches**.
+**Naming Convention:** (By default when flashing the SD card)
 
-Note: **Important** : please add `--type watchtower` to the flashing procedure
+* --linux-username: **duckie** 
+* --linux-password: **quackquack**
+* hostname: **watchtowerXX** (where XX specify the number of the Watchtower)
 
-Note: **Important** : please make sure you have set your dts to version `daffy` using the command `dts set-version --daffy`.
+Note: As of 2020 October, the option for user to set the username and password has been removed. User should not set the username and password manually.
 
-Note: **For RaspberryPi 4**, add `--experimental` to the command
+**Changable options:** 
 
+* --wifi: sets the wifi refer [here](+opmanual_duckiebot#setup-duckiebot) for more instruction. **If you are using watchtower in an autolab, this should not be set.** 
+* --configuration: sets the configuration. Currently supports WT18, WT19A, WT19B.
+* --no-cache: this ensures to use the latest image available.
+
+**Example Fashing command:**
 
 A complete command will look like:
 
-    laptop $ dts init_sd_card --hostname watchtower![XX] --linux-username mom --linux-password MomWatches --country ![COUNTRY] --type watchtower --experimental
+    laptop $ dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type watchtower --configuration WT19B
 
 Using the above naming conventions, you can flash your SD cards as is described in [Duckiebot Initialization](+opmanual_duckiebot#setup-duckiebot).
 
