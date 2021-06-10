@@ -4,7 +4,7 @@
 
 Requires: Passion for reproducible robotics
 
-Results: Basic understanding of Autolab 2.0
+Results: Basic understanding of Autolabs
 
 </div>
 
