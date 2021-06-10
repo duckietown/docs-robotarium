@@ -28,4 +28,13 @@ The goal of an Autolab is to create a automated environment for Duckiebots, in w
 
 ## Autolab in action
 
-TODO: link to a demo video
+The demo video shows:
+
+- (00:00 ~ 00:31) An AIDO participant submitting to an AIDO challenge
+- (00:32 ~ 03:14) Autolab evaluating the AIDO submission
+- (03:15 ~      ) Evaluation experiment results and metrics presented on the AIDO website
+
+<figure id="autolab2-demo">
+	<figcaption>Autolab demo (TTIC at Chicago)</figcaption>
+	<dtvideo src="vimdo:561305335"/>
+</figure>
