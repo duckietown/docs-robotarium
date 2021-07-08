@@ -2,13 +2,13 @@
 
 Excerpt:  The AprilTag specifications and measure.
 
-<!-- <div class='requirements' markdown="1">
+<div class='requirements' markdown="1">
 
-Requires: A fully operational [Duckietown](+opmanual_duckietown#duckietowns), compliant [autobots](#autolab-autobot-specs) and a [map of the Autolab](#autolab-map-making).
+Requires: A fully operational [Duckietown](+opmanual_duckietown#book), compliant [Autobots](#autolab-2-autobots) and a [map of the Duckietown](#autolab-2-map).
 
 Results: The city is ready to be used for localization
 
-</div> -->
+</div>
 
 <minitoc/>
 
@@ -19,15 +19,15 @@ Watchtowers can move around very easily. Collisions with duckiebots and humans a
 
 Instead, we fix ground apriltags on the ground, and we measure and record their positions in the map. This provides enough ground truth for the localization system.
 
-## Making the ground Apriltags {#making-ground-apriltags}
+## Making the ground Apriltags
 
-As a reminder, the Apriltags already have predetermined sets of usecase. The ranges of tags are specified in [](#tab:tag-ranges).
+As a reminder, the Apriltags already have predetermined sets of usecase. The ranges of tags are specified in [](#tab:tmp-tag-ranges).
 
 For localization, **the ground Apriltags are in range 300 to 399**.
 
 Note: For the Autobots themselves, the tags are in range 400 to 439. 
 
-<col4 figure-id="tab:tag-ranges" figure-caption="Apriltag ID ranges">
+<col4 figure-id="tab:tmp-tag-ranges" figure-caption="Apriltag ID ranges">
     <span>Purpose</span><span>Size</span><span>Family</span><span>ID Range</span>
     <span>Traffic signs</span><span>6.5cm x 6.5cm</span><span>36h11</span><span>1-199</span>
     <span>Traffic lights</span><span>6.5cm x 6.5cm</span><span>36h11</span><span>200-299</span>
@@ -52,7 +52,7 @@ Now, you need to place the ground apriltags. Once they are printed, place them w
 
 Todo: add figure(s)
 
-Note: Try to put at least two ground Apriltag in the field of view of each watchtower (see [](#fig:watchtower_view_straight_line)), and try to have Apriltags that are seen by multiple Watchtowers at the same time. This will improve the robustness of the localization graph.
+Note: Try to put at least two ground Apriltag in the field of view of each watchtower (see [](#fig:tmp_watchtower_view_straight_line)), and try to have Apriltags that are seen by multiple Watchtowers at the same time. This will improve the robustness of the localization graph.
 
 ## Generating the map in duckietown-world
 
@@ -72,7 +72,7 @@ This is the important part of the Apriltag specifications. You need to make sure
 
 * The measure of the ground Apriltags needs to be very precise. You should have a meter with millimeter precision.
 * In the map you created before, **the origin is the bottom left corner**. Remember this as it is *important*.
-* The tiles have an internal and an external border, because of the interlocking slots. In the following, as for the map, take **the inside bottom left as reference for a tile**. (see [](#fig:apriltag_measure_x))
+* The tiles have an internal and an external border, because of the interlocking slots. In the following, as for the map, take **the inside bottom left as reference for a tile**. (see [](#fig:tmp_apriltag_measure_x))
 * Each apriltag placement will be measured relatively to the tile it is on, from the above described origin.
 * Always measure the center of the April tag itself.
 
@@ -86,7 +86,7 @@ In the following, you will be asked 5 numbers for each Apriltag:
 * the y measure of the Apriltag on the tile : you can get it by blocking your meter in the interior bottom edge and measuring (in meters) the distance from the interior edge to the center of the Apriltag.
 * the orientation of the apriltag (in degrees) : it is 0 if the Apriltag's name is aligned normally with the x axis (eg readable from the "bottom" of the map). Then it is defined with the trigonometric convention (counter-clockwise). This should normally always be in multiples of 45°.
 
-<div figure-id="fig:apriltag_measure_x">
+<div figure-id="fig:tmp_apriltag_measure_x">
 <img src="opmanual_autolab/images/apriltag_measure_x.png" style="width: 60%"/>
 <figcaption> We measure from the inside band from the bottom left inner corner, defined as the origin of the tile </figcaption>
 </div>

@@ -10,18 +10,18 @@ Results: A Watchtower system ready to be used.
 
 <minitoc/>
 
-Refer to the [Watchtowers](#watchtoewr-hardware) section for how to build a watchtower.
-
 Note: If you have a RPi4, the command for flashing the SD card is (`XX` is a number starting from 01):
 
     laptop $ dts init_sd_card --country ![two_letter_country_code] --hostname ![watchtowerXX] --type watchtower --configuration WT21A
 
 
+Refer to the [Watchtowers](#watchtower-hardware) section for how to build a watchtower.
+
 ## Placement of the watchtowers
 
 This is a picture of the current Autolab in ETHZ. It will give you a quick approximate of how to place your watchtowers and how many you should put.
 
-<div figure-id="fig:autolab_picture">
+<div figure-id="fig:tmp_autolab_picture">
 <img src="opmanual_autolab/images/watchtower_placement/autolab_image.jpg" style="width: 90%"/>
 <figcaption>
 Picture of the Zurich ETH Autolab.
@@ -35,7 +35,7 @@ There's only two general rule of putting Watchtowers in a city.
 
 Below is a more synthetic view of the watchtower placement in ETHZ. The ratio of watchtower to road tiles is around 2/3.
 
-<div figure-id="fig:watchtower_placement">
+<div figure-id="fig:tmp_watchtower_placement">
 <img src="opmanual_autolab/images/watchtower_placement/autolab_wt_placement.png" style="width: 60%"/>
 <figcaption>
 Overview of the autolab and of the watchtower placement. Each number shows the position of a watchtower. Watchtowers number 01 to 16 are on the left loop, while watchtower 21 to 35 are on the right loop.
@@ -44,14 +44,14 @@ Overview of the autolab and of the watchtower placement. Each number shows the p
 
 Below is the field of view of watchtowers. Please keep in mind that they cover approximately 3 tiles each (even more in some cases), but that on the edge of the image, despite rectification, the image is distorted and thus the apriltag detection might give inaccurate results. This is why overlapping field of view are important. The more the better. 
 
-<div figure-id="fig:watchtower_view_corner">
+<div figure-id="fig:tmp_watchtower_view_corner">
 <img src="opmanual_autolab/images/watchtower_placement/wt_view_corner.png" style="width: 90%"/>
 <figcaption>
 View from a watchtower in a corner. It covers approximately 3 tiles.
 </figcaption>
 </div>
 
-<div figure-id="fig:watchtower_view_straight_line">
+<div figure-id="fig:tmp_watchtower_view_straight_line">
 <img src="opmanual_autolab/images/watchtower_placement/wt_view_straight.png" style="width: 90%"/>
 <figcaption>
 View from a watchtower on a straight line. It covers approximately 3 tiles.
