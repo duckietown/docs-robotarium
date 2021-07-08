@@ -82,16 +82,12 @@ This setup is the same for all hardware configurations.
 
 <div figure-id="fig:dashboard-login">
 <img src="opmanual_autolab/images/autobots_dashboard-login.png" style="width: 80%"/>
-<!-- <figcaption style="text-align: center">
-</figcaption> -->
 </div>
 
 ### Select "Settings" pane
 
 <div figure-id="fig:dashboard-settings">
 <img src="opmanual_autolab/images/autobots_dashboard-settings.png" style="width: 80%"/>
-<!-- <figcaption style="text-align: center">
-</figcaption> -->
 </div>
 
 ### Fill in the configs for "Autolab"
@@ -103,7 +99,7 @@ Check below for what values to fill
 </figcaption>
 </div>
 
-The "Map name" field requires a string, e.g. `ETH_large_loop`. It's the name of the map of the Autolab created and merged to the `duckietown/duckeitown-world` Github repository. 
+The "Map name" field requires a string, e.g. `ETH_large_loop`. It's the name of the map of the Duckietown created and merged to the `duckietown/duckeitown-world` Github repository. 
 
 The "Tag id" field requires 3 digit integers, e.g. `403`. With the provided AprilTags, the "Tag id"s correspond with Autobot hostnames in the following way:
 

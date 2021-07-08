@@ -23,7 +23,7 @@ On the main machine, follow the official document: [https://docs.docker.com/comp
 
 ###  Update all robots
 
-Note: For __all__ robots (Autobot, Watchtower, Duckietown)
+Note: For __all__ robots (Autobot, Watchtower, Duckiehall)
 
 Update all containers: 
 
@@ -38,7 +38,7 @@ Replace `[TAG_ID]` with the Apriltag ID (just number) on top of that Autobot:
 
     $ echo ![TAG_ID] > /data/config/autolab/tag_id
 
-Note: For __all__ robots (Autobot, Watchtower, Duckietown)
+Note: For __all__ robots (Autobot, Watchtower, Duckiehall)
 
 Replace `[MAP_NAME]` with the map name for this autolab, e.g. `ETH_large_loop`
 
@@ -60,9 +60,9 @@ TODO: Could simply check topic name with `rostopic list`. Better put the name he
 
 ### Start the autolab stack
 
-Note: For __all__ robots (Autobot, Watchtower, Duckietown)
+Note: For __all__ robots (Autobot, Watchtower, Duckiehall)
 
-Note: Start with `Duckietown` robots first
+Note: Start with `Duckiehall` robots first
 
 Run the Autolab stack:
 
@@ -93,7 +93,7 @@ autobot01/footprint tag/403
 watchtower05/camera_optical_frame tag/301
 ```
 
-The Duckietown robot will also publish TF between the map frame and each ground tag (every 10 sec),
+The Duckiehall robot will also publish TF between the map frame and each ground tag (every 10 sec),
 
 ```
 watchtower02/camera_optical_frame tag/343
